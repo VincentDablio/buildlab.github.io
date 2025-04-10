@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Computer System Build Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Login/Signup Overlay -->
+  <div id="auth-overlay">
+    <div class="auth-box">
+      <h2 id="auth-title">Login</h2>
+      <form id="login-form">
+        <input type="text" placeholder="Username" required>
+        <div class="password-wrapper">
+          <input type="password" placeholder="Password" id="login-password" required>
+          <span class="toggle-password" data-target="login-password" title="Show/Hide Password">👁</span>
+        </div>
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a></p>
+      </form>
+
+      <form id="signup-form" style="display: none;">
+        <input type="text" placeholder="Username" required>
+        <div class="password-wrapper">
+          <input type="password" placeholder="Password" id="signup-password" required>
+          <span class="toggle-password" data-target="signup-password" title="Show/Hide Password">👁</span>
+        </div>
+        <div class="password-wrapper">
+          <input type="password" placeholder="Confirm Password" id="confirm-password" required>
+          <span class="toggle-password" data-target="confirm-password" title="Show/Hide Password">👁</span>
+        </div>
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="#" id="switch-to-login">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="logo">
+      <img src="your-logo.png" alt="Logo" class="logo-icon"/>
+      <div>
+        <h1>Build Lab</h1>
+        <p>Learn PC Building the Fun Way!</p>
+      </div>
+    </div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <h1>Welcome to</h1>
+    <h2>Computer System Build Lab</h2>
+    <p class="tagline">
+      Explore the world of PC building through fun interactive challenges and quizzes.<br>
+      Stay within budget, test your knowledge, and become a PC-building expert!
+    </p>
+
+    <div class="button-group">
+      <button class="menu-button">Build Mode</button>
+      <hr />
+      <button class="menu-button">Question and Answer</button>
+      <button class="menu-button">Flash Card</button>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <footer class="bottom-nav">
+    <div class="nav-item">Home</div>
+    <div class="nav-item">Community</div>
+    <div class="nav-item">Browse</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
